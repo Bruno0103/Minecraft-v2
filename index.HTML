@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never Land Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="barra">
+        <h1>Never Land</h1>
+        <nav class="barraDeNavegacao">
+            <ul>
+                <li>Calculadora</li>
+                <li>Discord</li>
+                <li>Players</li>
+                <li>informações</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="calculadora">
+        <h1 class="calculadora-titulo">Calculadora De Portais</h1>
+        <div class="worlds">
+            <div class="portals over-world">
+                <img src="./imgs/minecraft-portal.png" alt="OverWorld" class="img-portal">
+                <div class="input-portal-grup">
+                    <div class="block-input-portal">
+                        <p>Overworld X</p>
+                        <input type="number" class="input-portal" name="X-over-world" id="X-over-world"
+                            onkeyup="overworld(event)">
+                    </div>
+                    <div class="block-input-portal">
+                        <p>Overworld Z</p>
+                        <input type="number" class="input-portal" name="Z-over-world" id="Z-over-world"
+                            onkeyup="overworld(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="portals ">
+                <img src="./imgs/minecraft-portal.png" alt="Nether" class="img-portal img-portal-nether">
+                <div class="input-portal-grup">
+                    <div class="block-input-portal">
+                        <p>Nether X</p>
+                        <input type="number" class="input-portal" name="X-nether" id="X-nether" onkeyup="nether(event)">
+                    </div>
+                    <div class="block-input-portal">
+                        <p>Nether Z</p>
+                        <input type="number" class="input-portal" name="Z-nether" id="Z-nether" onkeyup="nether(event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="Efect"></div>
+    <footer>
+        <P class="Creditos">Desenvolvedor: Brunosoaresrodriguesr@gmail.com</P>
+        <nav>
+            <ul class="Links">
+                <li><a class="icon" href="https://www.linkedin.com/in/bruno-soares-655b261b4/"><img
+                            src="./imgs/linkedin-icon.png" alt="Icon do Linkedin">Linkedin</a>
+                </li>
+                <li><a class="icon" href="https://github.com/Bruno0103"><img src="./imgs/github-icon-white.png"
+                            alt="Icon do GitHub">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
